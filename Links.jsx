@@ -11,11 +11,14 @@ return(
     <div className='w-[90%]  h-auto rounded-lg bg-gray-50 m-12 flex flex-col justify-center'> 
     <div className='w-full h-auto flex justify-center'>
     <img src={pic1}  className='w-72 h-72'></img>
-    <img src={pic1}  className='w-72 h-72'></img>
+   
     </div>
     <div> 
      <h1  className='text-4xl text-center font-bold text-gray-900'>Let's get you started</h1>
      <p className='text-center text-sm m-8'>Use the “Add new link” button to get started. Once you have more <br></br> than one link, you can reorder and edit them. We’re here to help <br></br> you share your profiles with everyone!</p>
+    </div>
+    <div>
+
     </div>
     </div>
     <div> 
