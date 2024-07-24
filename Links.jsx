@@ -1,4 +1,6 @@
 import  pic1  from '../img/pic1.svg';
+import Add from'./Add';
+
 function Links () {
 return(
 <>
@@ -7,6 +9,9 @@ return(
       <h1 className='text-4xl m-8 font-bold'>Customize your links</h1>
       <p className='text-gray-500 ml-8 text-lg '>Add/edit/remove links below and then share all your profiles with the world</p>
       <button className='hover:bg-violet-100 text-indigo-500 text-lg mt-12 font-medium rounded-md  ml-4 mr-4 h-12 border-[1px] border-indigo-500'> + Add new link</button>
+    </div>
+    <div className='w-[90%]  h-auto rounded-lg bg-gray-50 m-12 flex flex-col justify-center'>
+     <Add />
     </div>
     <div className='w-[90%]  h-auto rounded-lg bg-gray-50 m-12 flex flex-col justify-center'> 
     <div className='w-full h-auto flex justify-center'>
