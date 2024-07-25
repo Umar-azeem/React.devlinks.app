@@ -2,15 +2,12 @@ import logo   from './img/logo.svg';
 import pro from './img/profile.svg';
 import Profiles from './component/Profile';
 import Links from'./components/Links';
+
 import './App.css';
 import { useState } from 'react';
 
 function App() {
-
 const [showprofile,setShowProfile]=useState(false);
-
-
-
 
   return (
     <section className='w-screen h-auto bg-slate-50'>
