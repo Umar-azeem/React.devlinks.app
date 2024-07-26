@@ -1,5 +1,6 @@
 
-function Profiles() {
+function Profiles()
+{
     return ( 
         <>
          <div className='w-2/4 h-auto bg-white m-4'>
