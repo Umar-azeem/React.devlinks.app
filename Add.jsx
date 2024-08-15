@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Drop from "./Drop";
 
-function Add() {
+function Add({linkNumber}) {
   const [list, setList] = useState("");
   const account = [
     "Github",
@@ -39,7 +39,7 @@ function Add() {
           onChange={handleListChange}
           className="flex justify-between font-bold text-gray-500 mt-2 ml-2 text-md"
         >
-          <h1>=Links #1</h1>
+          <h1>=Links #{linkNumber}</h1>
           <button className="text-start mr-4 font-normal flex text-lg  text-gray-600">
             Remove
           </button>
@@ -53,7 +53,7 @@ function Add() {
             placeholder=" e.g Umar"
             className=" text-indigo-500 border-gray-300 text-md rounded-md  m-2 h-12 border-[1px] hover:border-red-500"
           /> */}
-          <Drop selected={'Google'}>
+          <Drop selected={'Github'}>
             <ul>
               {ListAccount.map((account, index) => (
                 <li
@@ -74,7 +74,7 @@ function Add() {
             aria-describedby="helper-text-explanation"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="name@flowbite.com"
-          />
+           />
         </div>
       </div>
     </>
