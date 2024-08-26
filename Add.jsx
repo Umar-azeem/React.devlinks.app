@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Drop from "./Drop";
 
-function Add({linkNumber}) {
+function Add({linkNumber,deleteItem, index}) {
   const [list, setList] = useState("");
   const account = [
     "Github",
@@ -25,7 +25,7 @@ function Add({linkNumber}) {
   const handleListChange = (event) => {
     setList(event.target.value);
   };
-  const ListAccount = account.filter((account) =>
+  const listAccount = account.filter((account) =>
     account.toLowerCase().includes(account.toLowerCase())
   );
 
@@ -40,7 +40,9 @@ function Add({linkNumber}) {
           className="flex justify-between font-bold text-gray-500 mt-2 ml-2 text-md"
         >
           <h1>=Links #{linkNumber}</h1>
-          <button className="text-start mr-4 font-normal flex text-lg  text-gray-600">
+          <button  onClick={() => {
+                deleteItem(index);
+              }} className="text-start mr-4 font-normal flex text-lg  text-gray-600">
             Remove
           </button>
         </div>
@@ -55,7 +57,7 @@ function Add({linkNumber}) {
           /> */}
           <Drop selected={'Github'}>
             <ul>
-              {ListAccount.map((account, index) => (
+              {listAccount.map((account, index) => (
                 <li
                   key={index}
                   className=" text-indigo-500 border-gray-300 text-md rounded-md text-start p-2 m-2 h-12 border-[1px] hover:border-red-500"
