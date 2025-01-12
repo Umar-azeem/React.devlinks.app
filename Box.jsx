@@ -2,7 +2,7 @@ import github   from '../img/icon-github-link-box.svg';
 import arrow   from '../img/icon-arrow-right.svg';
 function Box(){
     return(
-        <>
+         <>
         <div className="flex justify-center">
         <div className="w-2/5 h-auto bg-white m-1">
         {/* <h1>{inputfrist} {inputsecond} </h1>
