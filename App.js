@@ -1,7 +1,7 @@
 import logo from "./img/logo.svg";
 import pro from "./img/profile.svg";
 import Profiles from "./component/Profile";
-import Links from "./components/Links";
+ import Links from "./components/Links";
 import "./App.css";
 import { useState } from "react";
 import Box from "./components/Box";
