@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Drop from "./Drop";
-
 function Add({linkNumber,deleteItem, index}) {
   const [list, setList] = useState("");
   const account = [
