@@ -1,4 +1,4 @@
-import logo from "./img/logo.svg";
+ import logo from "./img/logo.svg";
 import pro from "./img/profile.svg";
 import Profiles from "./component/Profile";
  import Links from "./components/Links";
