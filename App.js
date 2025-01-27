@@ -7,7 +7,7 @@ import { useState } from "react";
 import Box from "./components/Box";
 import User from "./components/User";
 
-function App() {
+function App() { 
   const [showprofile, setShowProfile] = useState(false);
   const [links, setLinks] = useState([]);
   const newListArray = [...links,"empty","empty","empty","empty","empty"]
